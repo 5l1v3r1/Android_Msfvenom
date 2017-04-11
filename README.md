@@ -5,10 +5,11 @@
  \ \_\ \_\ \_\\"\_\ \____-\ \_\ \_\ \_____\ \_\ \____-    \ \_\ \_\ \_____\ \_____\ \_____\/\_____\/\_____\ 
   \/_/\/_/\/_/ \/_/\/____/ \/_/ /_/\/_____/\/_/\/____/     \/_/\/_/\/_____/\/_____/\/_____/\/_____/\/_____/ 
 ```                                                                                                  
-# Android_Msfvenom
+#Android_Msfvenom
 DESCRIPTION: A faster way to generate and sign android files, for mobile access (Can be hosted on a local apache server)
 ------------------------------------------------------------------------------------------------------------------------
 FILE: [generate_apk.py](https://github.com/scriptedp0ison/Android_Msfvenom/blob/master/generate_apk.py)
+
 USE: This file is used to generate the apk (Android Package Kit) using metasploits [Msfvenom](https://www.offensive-security.com/metasploit-unleashed/msfvenom/)
 
 ```python
@@ -65,6 +66,7 @@ android_signer.sign_apk()
 ```
 
 FILE: [android_signer.py](https://github.com/scriptedp0ison/Android_Msfvenom/blob/master/android_signer.py)
+
 USE: This file is used to sign the apk file, that can be created using [generate_apk.py](https://github.com/scriptedp0ison/Android_Msfvenom/blob/master/generate_apk.py), the file is then signed using [jarsigner](http://docs.oracle.com/javase/7/docs/technotes/tools/windows/jarsigner.html), will a validity of [10,000 days](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=10+000+days+in+years) (27 years)
 
 ```python
@@ -120,6 +122,7 @@ def server_start():
 ```
 
 FILE: [apache_server.py](https://github.com/scriptedp0ison/Android_Msfvenom/blob/master/apache_server.py)
+
 USE: This file is used to start the [apache2](https://httpd.apache.org/) server (/etc/init.d/apache2 start), and upload the generated apk file to /var/www/html
 
 ```python
