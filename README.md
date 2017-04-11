@@ -9,6 +9,7 @@
 __DESCRIPTION__: A faster way to generate and sign *android files*, for mobile access (Can be hosted on a local apache server)
 ------------------------------------------------------------------------------------------------------------------------
 __FILE__: [generate_apk.py](https://github.com/scriptedp0ison/Android_Msfvenom/blob/master/generate_apk.py)
+
 __USE__: This file is used to generate the apk (Android Package Kit) using metasploits [Msfvenom](https://www.offensive-security.com/metasploit-unleashed/msfvenom/)
 
 ```python
@@ -65,6 +66,7 @@ android_signer.sign_apk()
 ```
 
 __FILE__: [android_signer.py](https://github.com/scriptedp0ison/Android_Msfvenom/blob/master/android_signer.py)
+
 __USE__: This file is used to sign the apk file, that can be created using [generate_apk.py](https://github.com/scriptedp0ison/Android_Msfvenom/blob/master/generate_apk.py), the file is then signed using [jarsigner](http://docs.oracle.com/javase/7/docs/technotes/tools/windows/jarsigner.html), will a validity of [10,000 days](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=10+000+days+in+years) (27 years)
 
 ```python
@@ -120,6 +122,7 @@ def server_start():
 ```
 
 __FILE__: [apache_server.py](https://github.com/scriptedp0ison/Android_Msfvenom/blob/master/apache_server.py)
+
 __USE__: This file is used to start the [apache2](https://httpd.apache.org/) server (/etc/init.d/apache2 start), and upload the generated apk file to /var/www/html
 
 ```python
