@@ -67,7 +67,7 @@ android_signer.sign_apk()
 
 __FILE__: [android_signer.py](https://github.com/scriptedp0ison/Android_Msfvenom/blob/master/android_signer.py)
 
-__USE__: This file is used to sign the apk file, that can be created using [generate_apk.py](https://github.com/scriptedp0ison/Android_Msfvenom/blob/master/generate_apk.py), the file is then signed using [jarsigner](http://docs.oracle.com/javase/7/docs/technotes/tools/windows/jarsigner.html), will a validity of [10,000 days](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=10+000+days+in+years) (27 years)
+__USE__: This file is used to sign the apk file, that can be created using [generate_apk.py](https://github.com/scriptedp0ison/Android_Msfvenom/blob/master/generate_apk.py), the file is then signed using [jarsigner](http://docs.oracle.com/javase/7/docs/technotes/tools/windows/jarsigner.html), with a validity of [10,000 days](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=10+000+days+in+years) (27 years)
 
 ```python
 import os
